@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-*  巴西仪表的测试程序，仅仅测试硬件是否正常，不具备秤的功能
+*  
 *
 *
 ******************************************************************************/
@@ -14,7 +14,7 @@ uchar gbPowerOn = 0;
 #define LCD_TEST_MENU "Enter lcd test, press any key to exit...\x0d\x0a"
 #define AD_TEST_MENU  "Enter ad test, press any key to exit...\x0d\x0a"
 
-void (* pc_0)(void);			/* 程序地址0000 */
+void (* pc_0)(void);			/* 绋嬪簭鍦板潃0000 */
 
 void initSystem(void)
 {
@@ -42,7 +42,7 @@ void delayms(uint ms)
 	}
 }
 
-//低字节最高位，是小端模式，和MCS51反了
+//浣庡瓧鑺傛渶楂樹綅锛屾槸灏忕妯″紡锛屽拰MCS51鍙嶄簡
 void hex2Ascii(uchar *pHex, uchar len, uchar *pAsc)
 {
 	uchar i, j;
